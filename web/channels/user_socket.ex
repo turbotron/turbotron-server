@@ -2,7 +2,7 @@ defmodule Turbotron.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", Turbotron.RoomChannel
+  channel "user:*", Turbotron.UserChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
